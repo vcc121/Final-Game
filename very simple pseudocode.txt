@@ -1,0 +1,48 @@
+import pygame, simpleGE, random
+
+
+use demo collision detection code  
+use demo manyWalls code (as a starting point)
+
+create a player car starting in the top-right corner  
+    - uses WASD controls  
+
+create an endpoint in the bottom-left corner  
+    - This acts as the level goal  
+
+
+initialize a score variable  
+initialize a timer variable  
+    - Score points by reaching the endpoint  
+    - Completing a level adds bonus time to the timer  
+
+define level difficulty variables  
+    - Start with a small number of obstacles  
+    - Increase the number of obstacles as levels progress  
+    - Randomize obstacle sizes within a set range  
+    - Ensure obstacles do not overlap car during generation  
+
+generate barriers dynamically for each level  
+    - Use a loop to create barriers based on the difficulty variable  
+    - Assign random sizes and positions within valid screen space  
+    - Prevent barriers from overlapping with each other or the player car  
+
+implement WASD controls for the player car:  
+    - W to accelerate  
+    - A/D to turn   
+
+create a start screen with instructions and buttons  
+    - Include "Play" and "Quit" options  
+    - Display previous score, if available  
+
+add labels for score, timer, and level during gameplay  
+    - Update dynamically as the game progresses  
+
+detect when the player reaches the endpoint:  
+    - Increase score based on time left and level difficulty  
+    - Add bonus time to the timer  
+    - Move to the next level  
+
+end the game when the timer runs out  
+    - Display the final score on the game over screen  
+
